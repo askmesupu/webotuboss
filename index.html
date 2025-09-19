@@ -1,18 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supto | Futuristic 3D</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
 <body>
   <canvas id="scene"></canvas>
-  
+
+  <!-- Hero -->
   <div class="hero-text">
     <h1 id="name">SUPTO</h1>
     <p id="tagline">Gamer | Thinker | Unique</p>
   </div>
 
+  <!-- Contact -->
   <div class="info-section">
-    <h2>About Me</h2>
-    <p id="about">Loading...</p>
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Name*" required>
+      <input type="email" name="email" placeholder="Email*" required>
+      <textarea name="message" placeholder="Message*" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </div>
 
-  <!-- Social icons container -->
+  <!-- Review -->
+  <div class="info-section">
+    <h2>Review the Website</h2>
+    <form id="review-form">
+      <input type="text" name="name" placeholder="Name*" required>
+      <input type="email" name="email" placeholder="Email*" required>
+      <textarea name="review" placeholder="Your Review*" required></textarea>
+      <button type="submit">Send Review</button>
+    </form>
+  </div>
+
+  <!-- Social links fallback -->
   <div id="social-links"></div>
 
   <script type="module" src="/main.js"></script>
 </body>
+</html>
